@@ -1,0 +1,31 @@
+{
+  "name": "mangacode/datalayer",
+  "description": "The data layer is a persistent abstraction component of your database that PDO",
+  "keywords": [
+    "Mangacode",
+    "Database",
+    "PDO",
+    "Save",
+    "Delete",
+    "Destroy",
+    "CRUD"
+  ],
+  "homepage": "https://www.mangacode.com.br",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bernardo Correa",
+      "email": "contato@mangacode.com.br",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MangaCode\\DataLayer\\": "src"
+    }
+  }
+}

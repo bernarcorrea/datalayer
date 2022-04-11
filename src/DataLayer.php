@@ -45,7 +45,7 @@ abstract class DataLayer
     protected ?string $limit = null;
 
     /** @var int */
-    protected ?int $offset = null;
+    protected ?string $offset = null;
 
     /** @var PDOException|null */
     protected ?PDOException $fail = null;
@@ -152,7 +152,9 @@ abstract class DataLayer
     {
         if ($terms) {
             $this->statement = "SELECT {$columns} FROM {$this->entity} WHERE {$terms}";
-            parse_str($params, $this->params);
+            if ($params) {
+                parse_str($params, $this->params);
+            }
             return $this;
         }
 

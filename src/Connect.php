@@ -1,13 +1,13 @@
 <?php
 
-namespace CoffeeCode\DataLayer;
+namespace MangaCode\DataLayer;
 
 use PDO;
 use PDOException;
 
 /**
  * Class Connect
- * @package CoffeeCode\DataLayer
+ * @package MangaCode\DataLayer
  */
 class Connect
 {

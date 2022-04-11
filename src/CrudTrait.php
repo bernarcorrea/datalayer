@@ -1,13 +1,13 @@
 <?php
 
-namespace CoffeeCode\DataLayer;
+namespace MangaCode\DataLayer;
 
 use DateTime;
 use PDOException;
 
 /**
  * Trait CrudTrait
- * @package CoffeeCode\DataLayer
+ * @package MangaCode\DataLayer
  */
 trait CrudTrait
 {
